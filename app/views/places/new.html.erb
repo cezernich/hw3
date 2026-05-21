@@ -1,0 +1,14 @@
+<h1>Add a New Place</h1>
+
+<a href="/places">Back to all places</a>
+
+<form action="/places" method="post">
+  <%= hidden_field_tag(:authenticity_token, form_authenticity_token) %>
+
+  <div>
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+  </div>
+
+  <button type="submit">Add Place</button>
+</form>
